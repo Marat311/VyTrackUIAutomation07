@@ -6,6 +6,7 @@ import com.vytrack.pages.Dashbord_UserStory7;
 import com.vytrack.pages.LoginPage;
 import com.vytrack.pages.VehicleCostEntities;
 import com.vytrack.utilities.BrowserUtil;
+import com.vytrack.utilities.VyTrackUtility;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -63,12 +64,7 @@ public class UserStory7_CreateVehicleCost {
             Assertions.assertTrue(expectedResult.equals(actualResult));
             BrowserUtil.waitFor(2);
 
-            createVehicleCost.userInfo.click();
-            BrowserUtil.waitFor(2);
-
-            createVehicleCost.logout.click();
-
-
+            VyTrackUtility.logout();
 
         }
 
