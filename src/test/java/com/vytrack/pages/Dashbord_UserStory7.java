@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Dashbord_UserStory7 {
 
     @FindBy(xpath ="//a/span[normalize-space(.) = 'Fleet']" )
-    public WebElement Fleetlink;
+    public WebElement fleetlink;
 
     @FindBy(xpath = "//a/span[. = 'Vehicle Costs']")
     public WebElement vehicCost;
