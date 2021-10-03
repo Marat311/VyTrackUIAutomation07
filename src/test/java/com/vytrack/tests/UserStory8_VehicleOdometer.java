@@ -12,6 +12,23 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * 8. Story: As a user, I should be create Vehicle Odometer.
+ * 
+ * AC #1: drivers are able to create Vehicle Odometer.
+ *
+ * Given driver is on the homePage
+ * When user select “Vehicle Odometer” under Fleet module
+ * And user click “Create Vehicle Odometer” button
+ * When user fill out general information and click “Save and Close” button
+ * Then verify “Entity saved” confirm message
+ *
+ * AC #2: managers should not to create Vehicle Odometer.
+ *
+ * Given store/sales manager is on the homePage
+ * When user select “Vehicle Odometer” under Fleet module
+ * Then verify “You do not have permission to perform this action.” message
+ */
 public class UserStory8_VehicleOdometer extends TestBase {
 
     @Test
