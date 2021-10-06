@@ -14,6 +14,9 @@ public class Dashbord_UserStory7_11 {
     public WebElement vehicCost;
 
 
+    @FindBy(xpath = "//span[.='Vehicles Model']")
+    public WebElement vehicleModelOption;
+
     public Dashbord_UserStory7_11(){
         PageFactory.initElements(Driver.getDriver(), this);
 

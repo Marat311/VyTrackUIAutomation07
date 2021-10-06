@@ -1,6 +1,7 @@
 package com.vytrack.tests;
 
 import com.sun.jmx.snmp.SnmpUnknownAccContrModelException;
+import com.vytrack.pages.Dashbord_UserStory7_11;
 import com.vytrack.pages.LoginPage;
 import org.junit.jupiter.api.Test;
 
@@ -36,6 +37,9 @@ public class UserStory11_AllVehicleModels {
             loginPage.login(name);
 
        // When user select “Vehicle Model” under Fleet module
+            Dashbord_UserStory7_11 dash = new Dashbord_UserStory7_11();
+            dash.fleetlink.click();
+
 
 
 
