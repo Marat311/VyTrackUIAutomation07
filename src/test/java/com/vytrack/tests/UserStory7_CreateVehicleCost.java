@@ -2,7 +2,7 @@ package com.vytrack.tests;
 
 import com.github.javafaker.Faker;
 import com.vytrack.pages.CreateVehicleCost;
-import com.vytrack.pages.Dashbord_UserStory7;
+import com.vytrack.pages.Dashbord_UserStory7_11;
 import com.vytrack.pages.LoginPage;
 import com.vytrack.pages.VehicleCostEntities;
 import com.vytrack.utilities.BrowserUtil;
@@ -38,7 +38,7 @@ public class UserStory7_CreateVehicleCost extends TestBase {
             BrowserUtil.waitFor(2);
 
 
-            Dashbord_UserStory7 dashbord = new Dashbord_UserStory7();
+            Dashbord_UserStory7_11 dashbord = new Dashbord_UserStory7_11();
             dashbord.fleetlink.click();
             dashbord.vehicCost.click();
             BrowserUtil.waitFor(5);

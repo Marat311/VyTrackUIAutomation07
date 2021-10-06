@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Dashbord_UserStory7 {
+public class Dashbord_UserStory7_11 {
 
     @FindBy(xpath ="//a/span[normalize-space(.) = 'Fleet']" )
     public WebElement fleetlink;
@@ -14,7 +14,7 @@ public class Dashbord_UserStory7 {
     public WebElement vehicCost;
 
 
-    public Dashbord_UserStory7(){
+    public Dashbord_UserStory7_11(){
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
