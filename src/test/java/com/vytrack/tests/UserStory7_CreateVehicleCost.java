@@ -6,13 +6,14 @@ import com.vytrack.pages.Dashbord_UserStory7;
 import com.vytrack.pages.LoginPage;
 import com.vytrack.pages.VehicleCostEntities;
 import com.vytrack.utilities.BrowserUtil;
+import com.vytrack.utilities.TestBase;
 import com.vytrack.utilities.VyTrackUtility;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-public class UserStory7_CreateVehicleCost {
+public class UserStory7_CreateVehicleCost extends TestBase {
 
     @Test
     public void testCreateVehicleCost() {
@@ -21,11 +22,11 @@ public class UserStory7_CreateVehicleCost {
         names.add("driverUsername1");
         names.add("driverUsername2");
         names.add("driverUsername3");
-      //  names.add("storeManagerUsername1");
-        // names.add("storeManagerUsername2");
-      //  names.add("salesManagerUsername1");
-      //  names.add("salesManagerUsername2");
-      //  names.add("salesManagerUsername3");
+        names.add("storeManagerUsername1");
+        names.add("storeManagerUsername2");
+        names.add("salesManagerUsername1");
+        names.add("salesManagerUsername2");
+        names.add("salesManagerUsername3");
 
 
         for (String name : names) {
@@ -40,7 +41,7 @@ public class UserStory7_CreateVehicleCost {
             Dashbord_UserStory7 dashbord = new Dashbord_UserStory7();
             dashbord.fleetlink.click();
             dashbord.vehicCost.click();
-            BrowserUtil.waitFor(2);
+            BrowserUtil.waitFor(5);
 
             VehicleCostEntities vehicleCostEntities = new VehicleCostEntities();
             vehicleCostEntities.createVehicleBtn.click();
