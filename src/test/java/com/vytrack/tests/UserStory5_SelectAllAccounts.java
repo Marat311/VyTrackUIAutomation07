@@ -3,12 +3,13 @@ package com.vytrack.tests;
 import com.vytrack.pages.LoginPage;
 import com.vytrack.pages.UserStory5SelectAllAccounts;
 import com.vytrack.utilities.BrowserUtil;
+import com.vytrack.utilities.TestBase;
 import com.vytrack.utilities.VyTrackUtility;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-public class UserStory5_SelectAllAccounts {
+public class UserStory5_SelectAllAccounts extends TestBase {
     @Test
     public void UserSelectFirstCheckbox(){
 
