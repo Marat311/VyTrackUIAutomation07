@@ -32,4 +32,12 @@ public LoginPage(){
       loginButton.click();
     }
 
+    public void login(String username, String password){
+        this.username.sendKeys(username);
+        this.password.sendKeys(password);
+        this.loginButton.click();
+    }
+
+
+
 }
